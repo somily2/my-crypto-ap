@@ -10,7 +10,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11' # تم تصحيح الكلمة هنا من level إلى version
+          python-version: '3.11'
 
       - name: Setup Java (Required for Android)
         uses: actions/setup-java@v4
@@ -29,4 +29,4 @@ jobs:
 
       - name: Build APK
         run: |
-          flet build apk --no-public-sign
+          flet build apk --no-public-sign --yes
