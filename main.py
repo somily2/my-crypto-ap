@@ -10,7 +10,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.11' # تم تصحيح الكلمة هنا من level إلى version
 
       - name: Setup Java (Required for Android)
         uses: actions/setup-java@v4
